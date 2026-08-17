@@ -1,16 +1,109 @@
-# React + Vite
+# Freelance Marketplace Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern and responsive freelance marketplace web application where clients and freelancers can connect, explore opportunities, communicate through messages, and manage their freelance activities.
+---
 
-Currently, two official plugins are available:
+## 📌 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The Freelance Marketplace Platform is designed to provide a simple and user-friendly environment for clients and freelancers.
 
-## React Compiler
+Clients can find freelancers, communicate with them, and manage their projects, while freelancers can showcase their services and interact with clients.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The application includes a responsive dashboard, messaging system, notifications, profile management, and other marketplace features.
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## ✨ Features
+
+### 👤 User Features
+
+- User registration and login
+- Responsive user dashboard
+- Profile management
+- Client and freelancer roles
+- Search functionality
+- Responsive design
+
+### 💬 Messaging System
+
+- Conversation list
+- Search conversations
+- Real-time-style messaging UI
+- Send messages
+- Message timestamps
+- Unread message count
+- Mobile-friendly chat interface
+- Conversation persistence using LocalStorage
+- Automatic notification creation when messages are sent
+
+### 🔔 Notifications
+
+- Notification system
+- Message notifications
+- Read/unread notification state
+- Notification timestamps
+- Persistent notifications using LocalStorage
+
+### 🎨 UI & UX
+
+- Modern dashboard interface
+- Responsive layout
+- Mobile-friendly design
+- Clean navigation
+- Tailwind CSS styling
+- Lucide icons
+- Interactive components
+- Smooth hover and focus states
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+- React.js
+- JavaScript
+- React Router
+- Tailwind CSS
+- Lucide React
+- HTML5
+- CSS3
+
+### Development Tools
+
+- Vite
+- Git
+- GitHub
+- VS Code
+- npm
+
+---
+
+## 📁 Project Structure
+
+```text
+Freelance-Marketplace/
+│
+├── client/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── assets/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   │
+│   ├── package.json
+│   └── vite.config.js
+│
+├── server/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── server.js
+│   └── package.json
+│
+├── .gitignore
+└── README.md
