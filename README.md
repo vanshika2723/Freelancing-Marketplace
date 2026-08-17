@@ -97,13 +97,7 @@ Freelance-Marketplace/
 │   ├── package.json
 │   └── vite.config.js
 │
-├── server/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   ├── server.js
-│   └── package.json
+
 │
 ├── .gitignore
 └── README.md
