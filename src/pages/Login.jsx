@@ -53,14 +53,30 @@ function Login() {
     }
 
     // Logged In User Save
-    localStorage.setItem("user", JSON.stringify(user));
+ // Logged In User Save
+localStorage.setItem("user", JSON.stringify(user));
 
-    localStorage.setItem(
-      "freelanceLoggedIn",
-      JSON.stringify(true)
-    );
+localStorage.setItem(
+  "freelanceProfile",
+  JSON.stringify({
+    name: user.name,
+    title: user.title || "Freelancer",
+    email: user.email,
+    location: user.location || "Rajasthan, India",
+    experience: user.experience || "Beginner",
+    hourlyRate: user.hourlyRate || "25",
+    skills: user.skills || [],
+    image: user.image || "https://i.pravatar.cc/300?img=49",
+  })
+);
 
-    navigate("/dashboard");
+localStorage.setItem(
+  "freelanceLoggedIn",
+  JSON.stringify(true)
+);
+
+navigate("/dashboard");
+  
   };
 
   return (

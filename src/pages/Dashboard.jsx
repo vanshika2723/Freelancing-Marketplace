@@ -118,24 +118,26 @@ const [notificationOpen, setNotificationOpen] = useState(false);
   // =====================================================
   // PROFILE DATA
   // =====================================================
-
-  const defaultProfile = {
-    name: "Vanshika Khandelwal",
-    title: "Full Stack Developer",
-    email: "vanshika@example.com",
-    location: "Rajasthan, India",
-    experience: "Intermediate",
-    hourlyRate: "25",
-    skills: [
-      "React",
-      "Node.js",
-      "MongoDB",
-      "JavaScript",
-      "Tailwind CSS",
-      "Express.js",
-    ],
-    image: "https://i.pravatar.cc/300?img=49",
-  };
+const loggedInUser = JSON.parse(
+  localStorage.getItem("user") || "null"
+);
+ const defaultProfile = {
+  name: loggedInUser?.name || "User",
+  title: "Full Stack Developer",
+  email: loggedInUser?.email || "",
+  location: "Rajasthan, India",
+  experience: "Intermediate",
+  hourlyRate: "25",
+  skills: [
+    "React",
+    "Node.js",
+    "MongoDB",
+    "JavaScript",
+    "Tailwind CSS",
+    "Express.js",
+  ],
+  image: "https://i.pravatar.cc/300?img=49",
+};
 
   const [profile, setProfile] = useState(() => {
     const savedProfile = localStorage.getItem("freelanceProfile");

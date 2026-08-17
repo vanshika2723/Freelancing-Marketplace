@@ -56,7 +56,7 @@ function Signup() {
       JSON.stringify(formData)
     );
 
-    navigate("/dashboard");
+    navigate("/login");
   };
 
   return (
